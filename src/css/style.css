@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333;
+}
+
+body .dark-mode {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.header .logo,
+.header .img-btn {
+    width: 30px;
+    transition: 300ms all ease-in-out;
+}
+
+.header #btn-change-theme {
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.header .logo:hover,
+.header .img-btn:hover,
+.container .pokemon-card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.container {
+    padding: 25px;
+}
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.pokemon-card {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 300ms all ease-in-out;
+}
+
+.pokemon-card:hover {
+    background-color: #96b9d6;
+}
+
+.dark-mode .pokemon-card {
+    background-color: #a8a8a8;
+}
+.container .pokemon-card .info {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.container .pokemon-card .info span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.container .pokemon-card .gif {
+    width: 90px;
+    height: 90px;
+}
+
+.container .pokemon-card .types {
+    display: flex;
+    gap: 15px;
+}
+
+.container .pokemon-card .type {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+.container .description {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
